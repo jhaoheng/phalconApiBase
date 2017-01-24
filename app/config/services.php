@@ -42,6 +42,7 @@ $di->setShared('db', function () {
     $params = [
         'host'     => $config->database->host,
         'username' => $config->database->username,
+        'port'     => $config->database->port,
         'password' => $config->database->password,
         'dbname'   => $config->database->dbname,
         'charset'  => $config->database->charset
