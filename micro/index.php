@@ -25,6 +25,7 @@ try {
      * Get config service for use in inline setup below
      */
     $config = $di->getConfig();
+    ini_set('display_errors', $config->display_php_inner_error);
 
     /**
      * Include Autoloader

@@ -35,5 +35,6 @@ return new \Phalcon\Config([
      * You can disable this behaviour if the output of your application needs to don't have a new line at end
      */
     'cli_printNewLine' => true,
-    'version' => "1.0"
+    'version' => "1.0",
+    'display_php_inner_error' => false,
 ]);
