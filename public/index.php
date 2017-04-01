@@ -41,7 +41,7 @@ try {
     /**
      * Include Application
      */
-    include BASE_PATH . '/micro/microInterface.php';
+    include BASE_PATH . '/public/microInterface.php';
 
     /**
      * Handle the request

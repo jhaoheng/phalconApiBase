@@ -7,4 +7,8 @@ class HelloTask extends \Phalcon\Cli\Task
         return include BASE_PATH."/apibody/hello.php"; 
     }
 
+    public function testAction(){
+        return include BASE_PATH."/apibody/test.php";
+    }
+
 }
