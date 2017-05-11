@@ -1,2 +1,4 @@
 test.php
-/php-composer/vender/*
+
+php-composer/vendor
+php-composer/vender/*
