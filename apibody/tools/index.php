@@ -12,4 +12,6 @@ include_once TOOL_PATH."/database/postgresql_manager.php";
 include_once TOOL_PATH."/logController/Logcat.php";
 
 include_once TOOL_PATH."/response/httpResponse.php";
+
+include_once TOOL_PATH."/auth/auth.php";
 ?>
