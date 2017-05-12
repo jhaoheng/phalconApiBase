@@ -45,7 +45,7 @@ class httpResponse
         $this->debug_msg = $debug_msg;
     }
 
-    public set_httpStatusCode($value){
+    public function set_httpStatusCode($value){
         $this->http_status_code = $value;
     }
 
