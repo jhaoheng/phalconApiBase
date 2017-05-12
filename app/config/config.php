@@ -36,5 +36,6 @@ return new \Phalcon\Config([
      */
     'cli_printNewLine' => true,
     'version' => "1.0",
-    'display_php_inner_error' => false,
+    'display_php_inner_error' => false, // 是否顯示 php 內部錯誤訊息
+    'is_show_response_debug_msg' => false // 是否 resonse 顯示 debug message
 ]);
