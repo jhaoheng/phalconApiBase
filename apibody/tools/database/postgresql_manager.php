@@ -68,7 +68,7 @@ class Postgresql_Manager
         // if (!empty($this->connection)) {
         //     $this->dbClose();
         // }
-        $dbconfig = $this->config()->database;
+        $dbconfig = $this->config()->database->postgresql;
         $connection = new Postgresql(
             array(
                 "host"      => $dbconfig->host,

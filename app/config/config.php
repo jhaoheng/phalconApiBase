@@ -6,15 +6,41 @@
 defined('BASE_PATH') || define('BASE_PATH', getenv('BASE_PATH') ?: realpath(dirname(__FILE__) . '/../..'));
 defined('APP_PATH') || define('APP_PATH', BASE_PATH . '/app');
 
+/**
+ * mysql : 3306
+ * postgresql : 5432
+ * mongodb : 27017
+ */
+
 return new \Phalcon\Config([
     'database' => [
-        'adapter'    => 'Mysql',
-        'host'       => 'localhost',
-        'port'       => '8889',
-        'username'   => 'root',
-        'password'   => 'root',
-        'dbname'     => 'test',
-        'charset'    => 'utf8',
+        'mysql' => [
+            'adapter'    => 'Mysql',
+            'host'       => 'localhost',
+            'port'       => '8889',
+            'username'   => 'root',
+            'password'   => 'root',
+            'dbname'     => 'test',
+            'charset'    => 'utf8',
+        ],
+        'postgresql' =>[
+            'adapter'    => 'Postgresql',
+            'host'       => 'localhost',
+            'port'       => '5432',
+            'username'   => 'root',
+            'password'   => 'root',
+            'dbname'     => 'test',
+            'charset'    => 'utf8',
+        ],
+        'mongodb' => [
+            'host'       => 'localhost',
+            'port'       => '27017',
+            'username'   => 'root',
+            'password'   => 'root',
+            'dbname'     => 'test',
+        ],
+        'awsDynamodb' =>[
+        ],
     ],
 
     'application' => [

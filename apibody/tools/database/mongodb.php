@@ -94,7 +94,7 @@ class MongoDB_Client
 
     public function connectDB(){
 
-        $dbconfig = $this->config()->database;
+        $dbconfig = $this->config()->database->mongodb;
         $this->host = $dbconfig->host;
         $this->port = $dbconfig->port;
         $this->dbname = $dbconfig->dbname;

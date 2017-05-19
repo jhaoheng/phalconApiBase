@@ -68,7 +68,7 @@ class Mysql_Manager
         // if (!empty($this->connection)) {
         //     $this->dbClose();
         // }
-        $dbconfig = $this->config()->database;
+        $dbconfig = $this->config()->database->mysql;
         $connection = new Mysql(
             array(
                 "host"      => $dbconfig->host,
