@@ -5,7 +5,7 @@ include_once BASE_PATH ."/apibody/tools/time/time.php";
 /**
 * 
 */
-class slack
+class SlackManager
 {
     
     public $slackUrl;
@@ -16,11 +16,13 @@ class slack
 
     function __construct()
     {
-        # code...
-        $this->slackUrl = "https://hooks.slack.com/services/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";
-        $this->slackChannel = "#test_report";
-        $this->slackBotName = "bot";
-        $this->slack_icon_emoji = ":ghost:";
+        $config = include BASE_PATH."/app/config/config.php";
+        $slackConfig = $config->notification->slack;
+
+        $this->slackUrl = $slackConfig->botUrl;
+        $this->slackChannel = $slackConfig->slackChannel;
+        $this->slackBotName = $slackConfig->botName;
+        $this->slack_icon_emoji = $slackConfig->botIconEmoji;
         $this->project = basename ( BASE_PATH );
     }
 

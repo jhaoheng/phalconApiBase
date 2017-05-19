@@ -53,6 +53,14 @@ return new \Phalcon\Config([
     'notification' => [
         // get from firebase
         'firebaseKey' => 'AAAA7ckixgc:APA91bE4_jHKyaCVojtJEfp8bhIev_hOXC4td1y82TB0LWmyUhprIKR15p-VyMbwClZ9CBejdqI_QKFjZs8Cap5LtXezxwvJrNibRhW0-a_qMpZInFGy__W_KihtDgjt_NM84TNDYAcpvqunMa816KQrPtqojH1N6g',
+
+        // set slack robot
+        'slack' => [
+            'slackChannel' => '#general',
+            'botUrl' => 'https://hooks.slack.com/services/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',
+            'botName' => 'bot',
+            'botIconEmoji' => ":ghost:",
+        ],
     ],
 
     /**
