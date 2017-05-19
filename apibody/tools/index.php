@@ -14,4 +14,6 @@ include_once TOOL_PATH."/logController/Logcat.php";
 include_once TOOL_PATH."/response/httpResponse.php";
 
 include_once TOOL_PATH."/auth/auth.php";
+
+include_once TOOL_PATH."/firebase/firebaseMessage.php";
 ?>
