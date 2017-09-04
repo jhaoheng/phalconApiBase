@@ -1,0 +1,12 @@
+version: '3.0'
+services:
+  mivue_api:
+    image: jhaoheng/php_env:latest
+    ports:
+      - 80:80/tcp
+    tty: true
+    container_name: mivue_api
+    # working_dir: /usr/share/nginx/html
+    volumes:
+      - ./phalcon:/usr/share/nginx/html/phalcon
+      - ./nginx.conf:/etc/nginx/nginx.conf
