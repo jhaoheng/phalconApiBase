@@ -9,11 +9,11 @@ include_once TOOL_PATH."/database/mysql_manager.php";
 include_once TOOL_PATH."/database/postgresql_manager.php";
 // include_once TOOL_PATH."/database/mongodb.php";
 
-include_once TOOL_PATH."/logController/Logcat.php";
-
 include_once TOOL_PATH."/response/httpResponse.php";
 
 include_once TOOL_PATH."/auth/auth.php";
 
 include_once TOOL_PATH."/firebase/firebaseMessage.php";
+
+include_once TOOL_PATH."/slack/slackMessager.php";
 ?>

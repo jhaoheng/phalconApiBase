@@ -9,24 +9,6 @@ use Phalcon\Http\Response;
  * @param  $debug_msg           if debug mode==true, then it work.
  * @param  $api_code            0=NoError 用於自定義的 error code
  */
-// function responseJsonFormat($api_status, $http_status_code=418, $api_content, $debug_msg=null, $api_code='NoDefine'){
-
-//     $config = include APP_PATH . "/config/config.php";
-//     $is_show_response_debug_msg = $config->is_show_response_debug_msg;
-
-//     $content = array(
-//             'api_status'        =>      $api_status,
-//             'api_content'       =>      $api_content,
-//             'api_code'          =>      $api_code,
-//         );
-    
-//     if ($is_show_response_debug_msg) {
-//         $content['debug_info'] = $debug_msg;
-//     }
-
-// }
-
-
 /**
 * 
 */

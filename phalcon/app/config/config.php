@@ -32,15 +32,15 @@ return new \Phalcon\Config([
             'dbname'     => 'test',
             'charset'    => 'utf8',
         ],
-        'mongodb' => [
-            'host'       => 'localhost',
-            'port'       => '27017',
-            'username'   => 'root',
-            'password'   => 'root',
-            'dbname'     => 'test',
-        ],
-        'awsDynamodb' =>[
-        ],
+        // 'mongodb' => [
+        //     'host'       => 'localhost',
+        //     'port'       => '27017',
+        //     'username'   => 'root',
+        //     'password'   => 'root',
+        //     'dbname'     => 'test',
+        // ],
+        // 'awsDynamodb' =>[
+        // ],
     ],
 
     'application' => [
